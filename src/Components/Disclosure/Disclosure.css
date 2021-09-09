@@ -1,0 +1,25 @@
+.disclosure__container {
+  background-color: #104210;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disclosure__info-first {
+  background-color: blue;
+  width: 500px;
+  height: 90%;
+}
+
+.disclosure__info-second {
+  background-color: gold;
+  width: 500px;
+  height: 90%;
+}
+
+.disclosure__info-third {
+  background-color: red;
+  width: 500px;
+  height: 90%;
+}
