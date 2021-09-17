@@ -24,10 +24,10 @@
   height: 100vh;
 }
 
-.disclosure__wrapper-info > h1 {
+.disclosure__wrapper-info-title {
   margin: 5px;
   color: #1b2a37;
-  font-size: 2em;
+  font-size: 3rem;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.32);
   border-bottom: 1px solid #ff9f1c;
 }
@@ -41,86 +41,91 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
 }
 
 .info__wrapper-text {
-  width: 50%;
+  width: 100%;
   margin: 25px;
-
   text-align: center;
-}
-
-.info__wrapper-text img {
-  width: 30px;
-  margin-bottom: 10px;
 }
 
 .info__wrapper-text > p {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .info__wrapper-text > h3 {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   color: #1b2a37;
   text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.32);
   margin: 10px;
 }
 
-.info__wrapper-image {
-  width: 50%;
-  border-radius: 5px;
-  box-shadow: 0px 5px 25px 2px rgba(0, 0, 0, 0.62);
+.info__wrapper__image {
+  max-width: 80%;
+  width: auto;
+  max-height: 80%;
+  height: auto;
+  margin-right: 20px;
 }
 
-@media screen and (max-width: 960px) {
-  .disclosure__wrapper {
-    top: -23vh;
-  }
+.info__image {
+  object-fit: cover;
+  max-width: 500px;
+  width: auto;
+  max-height: 500px;
+  height: auto;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
 
-  .disclosure__wrapper-info > h1 {
-    font-size: 1.5em;
+@media screen and (max-width: 320px) {
+  .disclosure__wrapper-info-title {
+    font-size: 2rem;
   }
 
   .logo {
-    width: 12px;
+    width: 1.2rem;
   }
 
   .info__wrapper {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: auto;
   }
-
   .info__wrapper-text {
-    width: 100%;
+    width: 90%;
   }
 
   .info__wrapper-text > h3 {
-    font-size: 25px;
-    text-align: center;
+    font-size: 2rem;
   }
 
   .info__wrapper-text > p {
-    font-size: 1em;
-    margin: 0 20px;
-    font-weight: normal;
+    font-size: 1.5rem;
   }
 
-  .info__wrapper-image {
-    margin-top: 10px;
-    width: 90%;
-    margin-bottom: 20px;
+  .info__image {
+    width: 225px;
+    height: 130px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .info__wrapper-image {
-    max-height: 600px;
-    height: 100%;
-    max-width: 800px;
+@media screen and (max-width: 640px) {
+  .disclosure__wrapper {
+    height: 110vh;
+  }
+  .info__wrapper {
+    flex-direction: column;
+  }
+  .info__wrapper-text {
+    width: 90%;
+  }
+
+  .info__image {
+    max-width: 300px;
+    width: auto;
+    max-height: 300px;
+    height: auto;
   }
 }

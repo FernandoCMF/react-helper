@@ -5,10 +5,10 @@
   align-items: center;
   flex-flow: column;
 }
-/* #fdfaff */
 h1 {
   text-align: center;
   margin: 40px 0;
+  font-size: 3rem;
 }
 
 .Featured__wrapper {
@@ -59,12 +59,13 @@ h1 {
 .Card__content h3 {
   text-align: center;
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 .Card__content p {
   text-align: center;
+  font-size: 1.5rem;
 }
-
 @media screen and (max-width: 750px) {
   .Featured__wrapper {
     flex-direction: column;

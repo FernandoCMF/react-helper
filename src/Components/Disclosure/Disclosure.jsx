@@ -9,7 +9,7 @@ function Disclosure() {
     <div className='disclosure__container'>
       <div className='disclosure__wrapper'>
         <div className='disclosure__wrapper-info'>
-          <h1>
+          <h1 className='disclosure__wrapper-info-title'>
             Juntos somos mais f
             <img className='logo' alt='children' src={ImageLogo} />
             rtes!
@@ -28,11 +28,9 @@ function Disclosure() {
 
               <h3>FAÇA UMA CRIANÇA FELIZ!</h3>
             </div>
-            <img
-              src={Image2}
-              alt='Children smile'
-              className='info__wrapper-image'
-            />
+            <div className='info__wrapper__image'>
+              <img src={Image2} alt='Children smile' className='info__image' />
+            </div>
           </div>
         </div>
       </div>
